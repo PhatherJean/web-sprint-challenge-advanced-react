@@ -29,14 +29,40 @@ Commit your code regularly and meaningfully. This helps both you (in case you ev
 Be prepared to demonstrate your understanding of this week's concepts by answering questions on the following topics. You might prepare by writing down your own answers before hand.
 
 1. Explain how to build stateful class components.
+   -To build a stateful class component you will need to start with naming the class:
+   class App extends React.Component {
+   constructor ( ---- need to bring in the constructor for the class component
+   super(); ------ followed by a super() so that it can pass on attributes to the child components
+   this.state = {} ---- a form of initial state
+   )
+
+   render() {---- needed in a class component to render anything to the page 'speaking from experience here 😅😅'
+   return() ---- the return which will display its contents onto the page
+   }
+   }
+   export default App ----- Can't forget to export it otherwise all that work wont do you no good
 
 2. Describe the different phases of the component lifecycle.
+   Mounting- CDM- componentDidMount is the initial mounting of the the app to the DOM rendering what is returned
+   Update- CDU- componentDidUpdate is the rerendering of the states or props that changed without the need to refresh the whole page.
+   Unmounting- CWU- componentWillUnmount is the removal of the component that is not being used anymore
 
 3. Demonstrate an understanding of class component lifecycle methods.
+   CDM- componentDidMount is the initial mounting of the the app to the DOM rendering what is returned
+   CDU- componentDidUpdate is the rerendering of the states or props that changed without the need to refresh the whole page.
+   CWU- componentWillUnmount is the removal of the component that is not being used anymore
 
 4. Define stateful logic.
+   Logic that affect the current state of an application or page
 
 5. Describe how to test a React component with React Testing Library.
+   import the component and react into a testing file for the component being tested
+   define what it is that you will be testing for in the component
+   write code to ARRANGE the need elements to procced with the test
+   write code to ACT out the interaction with the DOM that a user would have
+   write code to ASSERT what the results should be and how it should be displayed on the page
+
+---
 
 You are expected to be able to answer questions in these areas. Your responses contribute to your Sprint Challenge grade.
 
