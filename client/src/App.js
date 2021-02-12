@@ -28,6 +28,7 @@ function App() {
           <h1>
             React Plants <span role="img">🌿</span>
           </h1>
+
           <ul className="steps">
             <li>
               <NavLink exact to="/">
